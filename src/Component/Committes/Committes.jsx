@@ -1,7 +1,7 @@
 import React from "react";
 import "./Committes.css";
 
-import committee from "./committee_fns.png";
+
 import anni from "../image/anni.png";
 import pkjain from "../image/pkjain.png";
 import sub from "../image/subrata.png";
@@ -13,41 +13,41 @@ import naik from '../image/naik.png';
 
 function Committes() {
   const adv = [
-    "Prof. Krishna N. Ganesh, Founder Director IISER Pune and Tirupati, and SERB National Chair, India. (Padma Shri awardee)",
-    "Prof. Avesh K. Tyagi, Director Chemistry Group, DAE-BARC, India.",
-    "Dr. Asish Lele, Director NCL Pune, India. (Shanti Swaroop Bhatnagar awardee)",
-    "Prof. Liming Dai, Director ARC Centre of Excellence for Carbon Science and Innovation, UNSW, Australia. (ARC laureate fellow)",
-    "Prof. Alexander M Seifalian, Director & Prof, Centre for Nanotechnology & Regenerative Medicine, UCL, England.",
-    "Prof. Dr. Madhav Mallia, Member secretary, and Head Radiopharmaceutical committee, DAE-BARC, Mumbai, India.",
-    "Prof. Rohit Srivastava, Prof. Dept. of Bioscience and Bio. Engg. IIT-Bombay, Mumbai, India. (Shanti Swaroop Bhatnagar & Vigyan Shri awardee)",
-    "Prof. Thomas J. Webster, Prof. Northeastern University, USA. (Nobel Prize nominee Chemistry 2023)",
-    "Prof. Ambarish Ghosh, Prof. CeNSE-IISc, Bengaluru, India. (Shanti Swaroop Bhatnagar awardee)",
-    "Dr. Binay Saikia, Chief Scientist, CSIR-NEIST, Assam, India. (Shanti Swaroop Bhatnagar awardee)",
-    "Prof. Amol Kulkarni, Chief Scientist, CSIR-NCL Pune, Maharashtra, India. (Shanti Swaroop Bhatnagar awardee)",
-    "Prof. Sagar Pal, Dean R&D, and Prof. Dept. of Chem. and Chem. Bio., IIT(ISM) Dhanbad, India. (MRSI and R. D. Desai awardee)",
-    "Prof. Ram Sharan Singh, HAG and BIS chai Prof. Dept. of Chem. Engg. & Tech., IIT-BHU, India.",
-    "Prof. A Venu Vinod, Dean F&W & Prof. Dept. of Chem. Engg, NIT Warangal, India.",
-    "Prof. Samrat Mukherjee, Dean S&W and Prof. Dept of Physics, NIT Patna.",
-    "Prof. Michael S Strano, Professor Dept. of Chem. Engg, MIT, USA.",
-    "Prof. Pallab Banerji, HAG Prof. Mater. Sci. Centre, IIT-Kharagpur, India.",
-    "Prof. Yogesh Chandra Sharma, Prof. Dept. of Chem., IIT-BHU, India.",
-    "Prof. M. Arivazhagan, Head & Professor Dept. of Chemical Engineering, NIT-Trichy, India.",
-    "Prof. Ram K. Gupta, Prof. Dept. of Chem., Pittsburg State University, USA.",
-    "Prof. Tarun K. Misra, Dean R&D, and Prof. Chemistry NIT Agartala, India.",
-    "Prof. Pallab Ghosh, Prof. Dept. of Chemical Engineering, IIT Guwahati, India.",
-    "Prof. G. Pugazhenthi, Prof. Dept. of Chemical Engineering, IIT Guwahati, India.",
-    "Prof. Dr. Raghumani Singh Ningthoujam, Scientist Chem. Div. DAE-BARC, India.",
-    "Prof. Arun Chattopadhyay, Prof. Dept. of Chemistry & Centre for Nanotech., IIT-Guwahati, India.",
-    "Prof. Prolay Das, Professor Dept. of Chem., IIT Patna, India.",
-    "Prof. Debapriya Mandal, Professor, Dept. of Chem. Engg, IIT-Jammu, India.",
-    "Prof. Debabrata Mandal, Head and Assoc. Prof. Dept. of Biotech., NIPER Hajipur, India.",
-    "Prof. Sahid Hussain, Assoc. Prof. Dept. of Chem., IIT Patna, India.",
-    "Dr. Amitava Acharya, Principal Scientist, CSIR-IHBT, Palampur, India.",
-    "Prof. Dr. Betty CA, Head N & BS Section Chem. Div. DAE-BARC, India.",
-    "Prof. Subinoy Rana, Asst. Prof. Mat. Research Cent., IISc Bengaluru, India.",
-    "Prof. Madhav Chavhan, Asst. Prof. Science, University of Ostrava, Czech Republic.",
-    "Prof. Isha Mutreja, Asst. Prof. Dept. of Rest. Sci. University of Minnesota, USA.",
-    "Prof. Shubhi Gupta, Asst. Prof. Fuel, Metals and Metallur. Engg., IIT(ISM) Dhanbad, India."
+    { name: "Prof. Krishna N. Ganesh", title: "Founder Director", affiliation: "IISER Pune and Tirupati, and SERB National Chair, India.", award: "Padma Shri awardee" },
+    { name: "Prof. Avesh K. Tyagi", title: "Director Chemistry Group", affiliation: "DAE-BARC, India.", award: null },
+    { name: "Dr. Asish Lele", title: "Director", affiliation: "NCL Pune, India.", award: "Shanti Swaroop Bhatnagar awardee" },
+    { name: "Prof. Liming Dai", title: "Director", affiliation: "ARC Centre of Excellence for Carbon Science and Innovation, UNSW, Australia.", award: "ARC laureate fellow" },
+    { name: "Prof. Alexander M Seifalian", title: "Director & Prof", affiliation: "Centre for Nanotechnology & Regenerative Medicine, UCL, England.", award: null },
+    { name: "Prof. Dr. Madhav Mallia", title: "Member secretary, and Head Radiopharmaceutical committee", affiliation: "DAE-BARC, Mumbai, India.", award: null },
+    { name: "Prof. Rohit Srivastava", title: "Prof. Dept. of Bioscience and Bio. Engg.", affiliation: "IIT-Bombay, Mumbai, India.", award: "Shanti Swaroop Bhatnagar & Vigyan Shri awardee" },
+    { name: "Prof. Thomas J. Webster", title: "Prof.", affiliation: "Northeastern University, USA.", award: "Nobel Prize nominee Chemistry 2023" },
+    { name: "Prof. Ambarish Ghosh", title: "Prof.", affiliation: "CeNSE-IISc, Bengaluru, India.", award: "Shanti Swaroop Bhatnagar awardee" },
+    { name: "Dr. Binay Saikia", title: "Chief Scientist", affiliation: "CSIR-NEIST, Assam, India.", award: "Shanti Swaroop Bhatnagar awardee" },
+    { name: "Prof. Amol Kulkarni", title: "Chief Scientist", affiliation: "CSIR-NCL Pune, Maharashtra, India.", award: "Shanti Swaroop Bhatnagar awardee" },
+    { name: "Prof. Sagar Pal", title: "Dean R&D, and Prof. Dept. of Chem. and Chem. Bio.", affiliation: "IIT(ISM) Dhanbad, India.", award: "MRSI and R. D. Desai awardee" },
+    { name: "Prof. Ram Sharan Singh", title: "HAG and BIS chai Prof. Dept. of Chem. Engg. & Tech.", affiliation: "IIT-BHU, India.", award: null },
+    { name: "Prof. A Venu Vinod", title: "Dean F&W & Prof. Dept. of Chem. Engg", affiliation: "NIT Warangal, India.", award: null },
+    { name: "Prof. Samrat Mukherjee", title: "Dean S&W and Prof. Dept of Physics", affiliation: "NIT Patna.", award: null },
+    { name: "Prof. Michael S Strano", title: "Professor Dept. of Chem. Engg", affiliation: "MIT, USA.", award: null },
+    { name: "Prof. Pallab Banerji", title: "HAG Prof. Mater. Sci. Centre", affiliation: "IIT-Kharagpur, India.", award: null },
+    { name: "Prof. Yogesh Chandra Sharma", title: "Prof. Dept. of Chem.", affiliation: "IIT-BHU, India.", award: null },
+    { name: "Prof. M. Arivazhagan", title: "Head & Professor Dept. of Chemical Engineering", affiliation: "NIT-Trichy, India.", award: null },
+    { name: "Prof. Ram K. Gupta", title: "Prof. Dept. of Chem.", affiliation: "Pittsburg State University, USA.", award: null },
+    { name: "Prof. Tarun K. Misra", title: "Dean R&D, and Prof. Chemistry", affiliation: "NIT Agartala, India.", award: null },
+    { name: "Prof. Pallab Ghosh", title: "Prof. Dept. of Chemical Engineering", affiliation: "IIT Guwahati, India.", award: null },
+    { name: "Prof. G. Pugazhenthi", title: "Prof. Dept. of Chemical Engineering", affiliation: "IIT Guwahati, India.", award: null },
+    { name: "Prof. Dr. Raghumani Singh Ningthoujam", title: "Scientist Chem. Div.", affiliation: "DAE-BARC, India.", award: null },
+    { name: "Prof. Arun Chattopadhyay", title: "Prof. Dept. of Chemistry & Centre for Nanotech.", affiliation: "IIT-Guwahati, India.", award: null },
+    { name: "Prof. Prolay Das", title: "Professor Dept. of Chem.", affiliation: "IIT Patna, India.", award: null },
+    { name: "Prof. Debapriya Mandal", title: "Professor, Dept. of Chem. Engg", affiliation: "IIT-Jammu, India.", award: null },
+    { name: "Prof. Debabrata Mandal", title: "Head and Assoc. Prof. Dept. of Biotech.", affiliation: "NIPER Hajipur, India.", award: null },
+    { name: "Prof. Sahid Hussain", title: "Assoc. Prof. Dept. of Chem.", affiliation: "IIT Patna, India.", award: null },
+    { name: "Dr. Amitava Acharya", title: "Principal Scientist", affiliation: "CSIR-IHBT, Palampur, India.", award: null },
+    { name: "Prof. Dr. Betty CA", title: "Head N & BS Section Chem. Div.", affiliation: "DAE-BARC, India.", award: null },
+    { name: "Prof. Subinoy Rana", title: "Asst. Prof. Mat. Research Cent.", affiliation: "IISc Bengaluru, India.", award: null },
+    { name: "Prof. Madhav Chavhan", title: "Asst. Prof. Science", affiliation: "University of Ostrava, Czech Republic.", award: null },
+    { name: "Prof. Isha Mutreja", title: "Asst. Prof. Dept. of Rest. Sci.", affiliation: "University of Minnesota, USA.", award: null },
+    { name: "Prof. Shubhi Gupta", title: "Asst. Prof. Fuel, Metals and Metallur. Engg.", affiliation: "IIT(ISM) Dhanbad, India.", award: null }
   ];
   
   return (
@@ -55,7 +55,7 @@ function Committes() {
       <div className="mx-2 md:mx-20">
         <div className="committees-layout my-5 py-5">
           <h2 className="text-2xl text-red-700 font-bold">Meet Our Team</h2>
-          <div className="min-h-screen  p-6">
+          <div className="min-h-screen p-6">
             {/* Director Section */}
             <div className="text-center mb-12">
               <img
@@ -73,7 +73,7 @@ function Committes() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mb-12">
               {/* Convener */}
               <div>
-                <h2 className="text-blue-900 text-2xl font-bold-normal">Convener</h2>
+                <h2 className="text-blue-900 text-2xl font-bold">Convener</h2>
                 <img
                   className="mx-auto rounded-lg w-40 h-40 object-cover"
                   src={sub}
@@ -91,7 +91,7 @@ function Committes() {
 
               {/* Co-Convener */}
               <div>
-              <h2 className="text-blue-900 text-2xl font-bold-normal">Co-Convener</h2>
+              <h2 className="text-blue-900 text-2xl font-bold">Co-Convener</h2>
                 <img
                   className="mx-auto rounded-lg w-40 h-40 object-cover"
                   src={anni}
@@ -108,7 +108,7 @@ function Committes() {
 
               {/* Treasurer */}
               <div>
-              <h2 className="text-blue-900 text-2xl font-bold-normal">Treasurer</h2>
+              <h2 className="text-blue-900 text-2xl font-bold">Treasurer</h2>
                 <img
                   className="mx-auto rounded-lg w-40 h-40 object-cover"
                   src={niki}
@@ -202,9 +202,14 @@ function Committes() {
               National and International Advisory Committee members
             </h1>
           <div className="mx-30 text-center">
-            {adv.map((adv, index) => (
+            {adv.map((member, index) => (
               <div key={index} className="text-left mx-10">
-                <p className="text-gray-700 text-xl mt-4">{adv}</p>
+                <p className="text-gray-700 text-xl mt-4">{member.name}</p>
+                <p className="text-gray-700 text-xl">{member.title}</p>
+                <p className="text-gray-700 text-xl">{member.affiliation}</p>
+                {member.award && <p className="text-gray-700 text-xl">Award: {member.award}</p>}
+              </div>
+            ))}
               </div>
             ))}
             </div>
